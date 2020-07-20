@@ -78,7 +78,7 @@
     </div>
     <div class="row">
         <div class="column column-60 column-offset-20">
-            <form method="POST" action="scrambler.php <?php if('decode'== $task) { echo "?task=decode"; } ?>" >
+            <form method="POST" action="scrambler.php<?php if('decode'== $task) { echo "?task=decode"; } ?>" >
                 <label for="key">Key</label>
                 <input type="text" name="key" id="key" value="<?php displayKey($key); ?>">
                 <label for="data">Data</label>
